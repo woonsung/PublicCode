@@ -30,8 +30,17 @@ namespace PublicCode
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.monthCalendar1 = new PublicCommonControls.WCalendar.MonthCalendar();
             this.wButton1 = new PublicCommonControls.WButton.WButton();
             this.SuspendLayout();
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.monthCalendar1.Location = new System.Drawing.Point(1179, 49);
+            this.monthCalendar1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 0;
             // 
             // wButton1
             // 
@@ -44,12 +53,11 @@ namespace PublicCode
             this.wButton1.ButtonSolidColor = System.Drawing.Color.Empty;
             this.wButton1.DrawBorder = true;
             this.wButton1.DrawBorderOnDisabled = true;
-            this.wButton1.FitImage = true;
             this.wButton1.Image = ((System.Drawing.Image)(resources.GetObject("wButton1.Image")));
             this.wButton1.Increasement = 1D;
             this.wButton1.IncreasementOnRightClick = 10D;
             this.wButton1.InnerSubTextColor = System.Drawing.Color.Black;
-            this.wButton1.Location = new System.Drawing.Point(41, 42);
+            this.wButton1.Location = new System.Drawing.Point(175, 49);
             this.wButton1.MaxValue = 100D;
             this.wButton1.MinValue = 0D;
             this.wButton1.MouseDownColor = PublicCommonControls.WButton.EnButtonColor.BlueGradient;
@@ -62,9 +70,9 @@ namespace PublicCode
             this.wButton1.PushedSolidColor = System.Drawing.Color.White;
             this.wButton1.PushedUnderLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.wButton1.Radius = 10;
-            this.wButton1.Size = new System.Drawing.Size(1033, 642);
+            this.wButton1.Size = new System.Drawing.Size(601, 429);
             this.wButton1.SubTextFont = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.wButton1.TabIndex = 0;
+            this.wButton1.TabIndex = 1;
             this.wButton1.Text = "wButton1";
             this.wButton1.UnderLineMouseOverColor = System.Drawing.Color.Empty;
             this.wButton1.Value = 0D;
@@ -73,8 +81,9 @@ namespace PublicCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1531, 942);
+            this.ClientSize = new System.Drawing.Size(2575, 1176);
             this.Controls.Add(this.wButton1);
+            this.Controls.Add(this.monthCalendar1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -83,6 +92,7 @@ namespace PublicCode
 
         #endregion
 
+        private PublicCommonControls.WCalendar.MonthCalendar monthCalendar1;
         private PublicCommonControls.WButton.WButton wButton1;
     }
 }

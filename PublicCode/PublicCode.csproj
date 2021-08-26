@@ -81,13 +81,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PublicCommonControls\PublicCommonControls.csproj">
-      <Project>{0551A6E3-E9E3-45A6-A912-6ABF98206035}</Project>
-      <Name>PublicCommonControls</Name>
-    </ProjectReference>
+    <None Include="Resources\cat.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cat.gif" />
+    <ProjectReference Include="..\PublicCommonControls\PublicCommonControls.csproj">
+      <Project>{0551a6e3-e9e3-45a6-a912-6abf98206035}</Project>
+      <Name>PublicCommonControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
